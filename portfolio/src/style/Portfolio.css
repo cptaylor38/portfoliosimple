@@ -1,0 +1,7 @@
+#portfolio {
+  min-height: 100vh;
+  padding-top: 20vh;
+  background: blue;
+  display: flex;
+  justify-content: center;
+}

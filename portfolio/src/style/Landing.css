@@ -1,0 +1,49 @@
+#bio {
+  position: relative;
+}
+
+#selfie {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+#landingContainer {
+  display: flex;
+  padding-top: 20vh;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#landingBio {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+}
+
+#landingBio > header {
+  text-align: center;
+}
+
+#landingBio > header > h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+#landingBio > header > h2 {
+  font-size: 2.5rem;
+}
+
+#landingNav {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  font-size: 2rem;
+}
+
+#landingNav > a {
+  margin-top: 2rem;
+}
