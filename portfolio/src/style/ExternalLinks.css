@@ -1,0 +1,16 @@
+#externalLinks {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 1rem;
+}
+
+#externalLinks > a {
+  margin: 1rem;
+  color: rgb(128, 128, 223);
+}
+
+#externalLinks > a:hover {
+  color: rgb(60, 60, 156);
+}

@@ -1,5 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
 #contact {
   min-height: 100vh;
-  background: yellow;
-  padding-top: 20vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+}
+
+#contactHeader {
+  width: 60%;
+}
+
+#contactFormContainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.contactInput {
+  margin-top: 2rem;
+  text-indent: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#contactFormContainer > textarea {
+  font-size: 1.25rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#contactButton {
+  margin-top: 2vh;
+  width: 10%;
+  align-self: center;
+  font-size: 1rem;
+  border: 1px solid grey;
+  background: white;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#contactButton:hover {
+  background: grey;
+  color: white;
 }

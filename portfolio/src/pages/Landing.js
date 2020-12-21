@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style/Landing.css';
+import ExternalLinks from '../Components/ExternalLinks';
 
 const Landing = () => {
     return (
@@ -13,10 +14,15 @@ const Landing = () => {
                     </header>
                     <p>Hello, I'm Corbin. Located in Lexington, NC </p>
                 </div>
-                <div id='landingNav'>
-                    <a href='#portfolio'>Portfolio</a>
-                    <a href='#faq'>FAQ</a>
-                    <a href='#contact'>Contact</a>
+                <div>
+                    <div id='landingNav'>
+                        <a href='#portfolio'>Portfolio</a>
+                        <a href='#faq'>FAQ</a>
+                        <a href='#contact'>Contact</a>
+                    </div>
+                    <div id='landingLinks'>
+                        <ExternalLinks />
+                    </div>
                 </div>
             </div>
         </div>

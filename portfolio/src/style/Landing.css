@@ -40,10 +40,21 @@
 #landingNav {
   display: flex;
   flex-direction: column;
+  text-align: center;
   padding: 4rem;
   font-size: 2rem;
 }
 
 #landingNav > a {
   margin-top: 2rem;
+  color: rgb(146, 146, 146);
+  text-decoration: none;
+}
+
+#landingNav > a:hover {
+  color: black;
+}
+
+#landingLinks {
+  font-size: 1.5rem;
 }
