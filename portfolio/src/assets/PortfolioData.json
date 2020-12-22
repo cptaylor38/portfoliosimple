@@ -4,7 +4,7 @@
       "githubLink": "https://github.com/cptaylor38/Wordstock",
       "deployedLink": "https://wordstock-app.herokuapp.com/",
       "body": "A small translator/dictionary/thesaraus using plain html/css/javascript. Translate a phrase from English to a number of different languages using the MyMemory translation api which takes user-submitted data to determine the closest translation match. The dictionary portion uses WordsApi and provides multiple definitions and synonyms (also user-submitted) with associated definitions for your word of choice. It was my first project learning about web development. My role was api consumption, wiring and event handling, and overall functionality.",
-      "image": "wordstockTranslate.png",
+      "image": "wordstockTranslate-min.png",
       "id": 1
     },
     {

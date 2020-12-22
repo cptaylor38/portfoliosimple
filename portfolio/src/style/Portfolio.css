@@ -1,7 +1,36 @@
 #portfolio {
   min-height: 100vh;
-  padding-top: 20vh;
-  background: blue;
+  padding-top: 10vh;
+}
+
+#portfolioCardCont {
   display: flex;
-  justify-content: center;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.portfolioScrollBtn {
+  position: sticky;
+  top: 50%;
+  background: none;
+  opacity: 0.4;
+  padding: 1rem;
+  border: none;
+  font-size: 3rem;
+  -webkit-appearance: none;
+  color: black;
+}
+
+.portfolioScrollBtn:hover {
+  opacity: 1;
+  -webkit-appearance: none;
+}
+
+#scrollLeftBtn {
+  left: 0;
+}
+
+#scrollRightBtn {
+  right: 0;
 }

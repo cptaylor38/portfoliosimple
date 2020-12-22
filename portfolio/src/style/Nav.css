@@ -1,5 +1,5 @@
 #nav {
-  background: green;
+  background: rgb(207, 207, 207);
   height: 10vh;
   position: fixed;
   top: 0;
@@ -9,4 +9,12 @@
   justify-content: space-evenly;
   align-items: center;
   z-index: 2;
+}
+
+#nav > a {
+  color: rgb(116, 116, 116);
+}
+
+#nav > a:hover {
+  color: black;
 }

@@ -26,6 +26,7 @@
   border-radius: 10px;
   font-size: 1rem;
   font-family: "Ubuntu", sans-serif;
+  border: 1px solid grey;
 }
 
 #contactFormContainer > textarea {
