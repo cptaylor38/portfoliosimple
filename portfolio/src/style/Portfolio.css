@@ -1,6 +1,5 @@
 #portfolio {
   min-height: 100vh;
-  padding-top: 10vh;
 }
 
 #portfolioCardCont {
@@ -12,19 +11,23 @@
 
 .portfolioScrollBtn {
   position: sticky;
-  top: 50%;
   background: none;
   opacity: 0.4;
-  padding: 1rem;
+  padding: 0 2rem;
+  top: 40%;
   border: none;
   font-size: 3rem;
   -webkit-appearance: none;
   color: black;
+  z-index: 3;
+  outline: none;
 }
 
 .portfolioScrollBtn:hover {
   opacity: 1;
   -webkit-appearance: none;
+  background: rgba(0, 0, 0, 0.603);
+  color: white;
 }
 
 #scrollLeftBtn {

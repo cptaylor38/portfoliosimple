@@ -6,11 +6,13 @@ import { BiLeftArrow, BiRightArrow } from 'react-icons/bi'
 
 const Portfolio = () => {
 
+
+    let screenWidth = window.innerWidth;
     const scrollHandler = (direction) => {
         let div = document.getElementById('portfolioCardCont');
         console.log(document.scrollingElement.scrollTop)
-        if(direction === 'left') div.scrollLeft -= 20;
-        if(direction === 'right') div.scrollLeft += 20;
+        if(direction === 'left') div.scrollLeft -= screenWidth;
+        if(direction === 'right') div.scrollLeft += screenWidth;
     }
 
     return (
