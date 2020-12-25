@@ -45,16 +45,6 @@
   font-size: 2rem;
 }
 
-#landingNav > a {
-  margin-top: 2rem;
-  color: rgb(146, 146, 146);
-  text-decoration: none;
-}
-
-#landingNav > a:hover {
-  color: black;
-}
-
 #landingLinks {
   font-size: 1.5rem;
 }

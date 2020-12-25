@@ -17,6 +17,10 @@
   align-items: center;
 }
 
+.pcBody {
+  font-size: 1.2em;
+}
+
 #descriptionToggle {
   font-size: 2rem;
 }

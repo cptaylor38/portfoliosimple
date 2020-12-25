@@ -9,6 +9,7 @@ const ProjectCard = ({project}) => {
     const overlayManager = () => {
         setOvDisplay(!ovDisplay);
     }
+
     return(
         <div className='pcCont'>
             <div id='linksRow'>
@@ -20,7 +21,7 @@ const ProjectCard = ({project}) => {
                 <div id='overlay' style={ovDisplay ? {display: 'flex'} : {display: 'none'}}>
                     <p className='pcBody'>{project.body}</p>
                 </div>
-                <img src={require(`../assets/images/projectImages/${project.image}`)} className='pcImg' style={ovDisplay ? {opacity: '0.1'} : {opacity: '1'}} />
+                <img src={require(`../assets/images/projectImages/${project.image}`)} className='pcImg' style={ovDisplay ? {opacity: '0'} : {opacity: '1'}} />
             </div>
             <h1 className='pcHeader'>{project.title}</h1>
         </div>

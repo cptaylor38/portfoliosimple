@@ -8,6 +8,9 @@ import Contact from './Contact';
 
 export default function Home() {
   const [nav, setNav] = useState(false);
+  const scrollHandler = (div) => {
+    document.getElementById(`${div}`).scrollIntoView({behavior: 'smooth'});
+}
 
   useEffect(()=> {
     window.addEventListener('scroll', ()=> {
@@ -20,8 +23,8 @@ export default function Home() {
 
   return(
     <div id='main'>
-      {nav ? (<Nav />) : null}
-      <Landing />
+      {nav ? (<Nav scrollHandler={scrollHandler}/>) : null}
+      <Landing scrollHandler={scrollHandler}/>
       <Portfolio />
       <FAQ />
       <Contact />

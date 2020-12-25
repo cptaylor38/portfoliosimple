@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
 #nav {
   background: rgb(207, 207, 207);
   height: 10vh;
@@ -17,4 +19,29 @@
 
 #nav > a:hover {
   color: black;
+}
+
+.navBtn {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  color: rgb(146, 146, 146);
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navBtn:hover {
+  color: black;
+}
+
+.navbarNav {
+  font-size: 1em;
+  margin-top: 0;
+  color: black;
+}
+
+.navbarNav:hover {
+  color: white;
 }

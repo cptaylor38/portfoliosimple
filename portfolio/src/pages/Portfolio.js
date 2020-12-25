@@ -15,6 +15,11 @@ const Portfolio = () => {
         if(direction === 'right') div.scrollLeft += screenWidth;
     }
 
+    const sideScroller = (direction, isScrolling) => {
+        let div = document.getElementById('portfolioCardCont');
+        direction === 'left' ? div.scrollLeft -= 100 : div.scrollLeft += 100;
+    }
+
     return (
         <div id='portfolio'>
             <div id='portfolioCardCont'>

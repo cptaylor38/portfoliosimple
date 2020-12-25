@@ -2,7 +2,7 @@ import React from 'react';
 import '../style/Landing.css';
 import ExternalLinks from '../Components/ExternalLinks';
 
-const Landing = () => {
+const Landing = ({scrollHandler}) => {
     return (
         <div id='bio'>
             <img id='selfie' src={require('../assets/images/bioImg.svg')} />
@@ -16,9 +16,9 @@ const Landing = () => {
                 </div>
                 <div>
                     <div id='landingNav'>
-                        <a href='#portfolio'>Portfolio</a>
-                        <a href='#faq'>FAQ</a>
-                        <a href='#contact'>Contact</a>
+                        <button className='navBtn' onClick={()=> scrollHandler('portfolio')}>Portfolio</button>
+                        <button className='navBtn' onClick={()=> scrollHandler('faq')}>FAQ</button>
+                        <button className='navBtn' onClick={()=> scrollHandler('contact')}>Contact</button>
                     </div>
                     <div id='landingLinks'>
                         <ExternalLinks />
