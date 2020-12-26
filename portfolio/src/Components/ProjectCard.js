@@ -12,6 +12,28 @@ const ProjectCard = ({project}) => {
 
     return(
         <div className='pcCont'>
+            <div className='headerRow'>
+                <div className='picAndLinks'>
+                    <img src={require(`../assets/images/projectImages/${project.image}`)} className='pcImg' style={ovDisplay ? {opacity: '0'} : {opacity: '1'}} />
+                    <div className='linksRow'>
+                        <a className='pcLink' href={project.githubLink}><FaGithub /></a>
+                        {project.deployedLink ? (<a href={project.deployedLink} className='pcLink'><IoNavigateOutline /></a>): null}
+                    </div>
+                </div>
+                <div className='headerAndDescription'>
+                    <h1 className='pcHeader'>{project.title}</h1>
+                    <div className='descriptionRow'>
+                        <p className='pcBody'>{project.body}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default ProjectCard;
+
+{/* <div className='pcCont'>
             <div id='linksRow'>
                     <a className='pcLink' href={project.githubLink}><FaGithub /></a>
                     {project.deployedLink ? (<a href={project.deployedLink} className='pcLink'><IoNavigateOutline /></a>): null}
@@ -24,9 +46,4 @@ const ProjectCard = ({project}) => {
                 <img src={require(`../assets/images/projectImages/${project.image}`)} className='pcImg' style={ovDisplay ? {opacity: '0'} : {opacity: '1'}} />
             </div>
             <h1 className='pcHeader'>{project.title}</h1>
-        </div>
-    )
-}
-
-export default ProjectCard;
-
+        </div> */}

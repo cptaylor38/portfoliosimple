@@ -1,19 +1,30 @@
 .pcCont {
-  padding: 3rem;
-  min-width: 40vw;
-  text-align: center;
-}
-
-#titleAndLinks {
+  padding: 5rem;
   display: flex;
+  max-width: 80%;
   flex-direction: column;
-  text-align: center;
+  background: white;
+  margin: 3rem 0;
+  border-radius: 20px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-#titleAndDescriptionToggle {
+.headerRow {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+}
+
+.picAndLinks {
+  max-width: 50%;
+}
+
+.headerAndDescription {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -21,32 +32,28 @@
   font-size: 1.2em;
 }
 
-#descriptionToggle {
+.linksRow {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
   font-size: 2rem;
 }
 
-#linksRow {
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 2rem;
-  font-size: 1.5rem;
+.linksRow > a {
+  color: rgb(160, 160, 240);
 }
 
-#picCont {
-  position: relative;
-}
-
-#overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+.linksRow > a:hover {
+  color: rgb(92, 92, 230);
 }
 
 .pcImg {
-  max-height: 100%;
   max-width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  align-self: flex-start;
+}
+
+.pcBody {
+  padding: 3rem;
 }
