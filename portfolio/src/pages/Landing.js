@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../style/Landing.css';
 import ExternalLinks from '../Components/ExternalLinks';
+import { BsArrowBarRight } from 'react-icons/bs';
+import Bio from '../Components/Bio';
 
 const Landing = ({scrollHandler}) => {
+    const [showBio, setShowBio] = useState(false);
+
     return (
         <div id='bio'>
+            {showBio ? (<Bio setShowBio={setShowBio}/>) : null}
             <img id='selfie' src={require('../assets/images/bioImg.svg')} />
             <div id='landingContainer'>
                 <div id='landingBio'>
@@ -12,7 +17,7 @@ const Landing = ({scrollHandler}) => {
                         <h1>Corbin Taylor</h1>
                         <h3>Software Developer | Front End Developer</h3>
                     </header>
-                    <p>Hello, I'm Corbin. Located in Lexington, NC </p>
+                    <button onClick={()=> setShowBio(true)}>Bio <BsArrowBarRight /></button>
                 </div>
                 <div>
                     <div id='landingNav'>
