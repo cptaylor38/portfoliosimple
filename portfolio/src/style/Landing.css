@@ -49,3 +49,21 @@
 #landingLinks {
   font-size: 1.5rem;
 }
+
+#bioToggleBtn {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 2.5rem;
+  color: grey;
+}
+
+#bioToggleBtn > p {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#bioToggleBtn > p:hover {
+  color: black;
+}

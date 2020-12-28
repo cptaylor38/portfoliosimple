@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../style/Landing.css';
 import ExternalLinks from '../Components/ExternalLinks';
-import { BsArrowBarRight } from 'react-icons/bs';
+import { FaRegEye } from 'react-icons/fa';
 import Bio from '../Components/Bio';
 
 const Landing = ({scrollHandler}) => {
@@ -17,7 +17,9 @@ const Landing = ({scrollHandler}) => {
                         <h1>Corbin Taylor</h1>
                         <h3>Software Developer | Front End Developer</h3>
                     </header>
-                    <button onClick={()=> setShowBio(true)}>Bio <BsArrowBarRight /></button>
+                    <button id='bioToggleBtn' onClick={()=> setShowBio(true)}>
+                        <p>Bio <FaRegEye /></p>
+                    </button>
                 </div>
                 <div>
                     <div id='landingNav'>
