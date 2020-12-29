@@ -10,7 +10,7 @@ const Landing = ({scrollHandler}) => {
     return (
         <div id='bio'>
             {showBio ? (<Bio setShowBio={setShowBio}/>) : null}
-            <img id='selfie' src={require('../assets/images/bioImg.svg')} />
+            <img id='selfie' src={require('../assets/images/bioImg.svg')} alt='selfieSVG' />
             <div id='landingContainer'>
                 <div id='landingBio'>
                     <header>
