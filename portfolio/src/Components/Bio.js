@@ -1,19 +1,24 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useRef } from 'react';
+import { TweenMax } from 'gsap';
 import '../style/Bio.css';
 import { GrClose } from 'react-icons/gr';
 
 const Bio = ({setShowBio}) => {
-
-
+    let bioElement = useRef(null);
+    useEffect(()=> {
+        TweenMax.to([bioElement.current], .2, {transform: 'translateY(0)'})
+    }, [])
 
     return (
-        <div id='bioExtended' onMouseLeave={()=> setShowBio(false)}>
-            <img src={require('../assets/images/minasvg.svg')} />
+        <div id='bioExtended' ref={bioElement}>
             <div id='bioExtendedContainer'>
                 <header>
                     <h2>A little about me...</h2>
                     <button onClick={()=> setShowBio(false)}><GrClose /></button>
                 </header>
+                {/* <section id='minaSection'>
+                    <img src={require('../assets/images/minasvg.svg')} />
+                </section> */}
                 <section id='bioSection'>
                     <p>Hello, my name is Corbin. I'm currently a freelance developer located in Lexingtion, North Carolina.</p>
                     <p>Creativity has always been an outlet for me, whether it was replicating video game characters out of clay, Frankenstein'ing pieces of old lamps together on my grandmother's back porch, painting or building props for upcoming Movie promotionals at my first job at Carmike Cinemas, or sewing stuffed animals and Halloween costumes. I've always enjoyed finding new mediums to explore and it's this passion that led me to my development journey. </p>

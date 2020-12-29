@@ -4,16 +4,9 @@
   left: 0;
   min-height: 100%;
   min-width: 100%;
-}
-
-#bioExtended > img {
-  object-fit: cover;
-  min-height: 100%;
-  min-width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.8;
+  transform: translateY(-200%);
+  display: flex;
+  flex-flow: column wrap;
 }
 
 #bioExtendedContainer {
@@ -30,6 +23,7 @@
   justify-content: space-between;
   padding-left: 2rem;
   background: rgb(252, 229, 98);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 #bioExtendedContainer > header > button {
@@ -44,11 +38,15 @@
 }
 
 #bioSection {
-  max-width: 80%;
+  max-width: 60%;
   margin: auto;
   font-size: 1.1em;
   background: rgb(252, 229, 98);
   border-radius: 0 0 50px 50px;
+  display: flex;
+  flex-flow: row wrap;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-top: 2rem;
 }
 
 #bioExtendedContainer > section {

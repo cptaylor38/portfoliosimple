@@ -9,7 +9,6 @@
 #externalLinks > a {
   margin: 1rem;
   color: rgb(128, 128, 223);
-  z-index: 10;
 }
 
 #externalLinks > a:hover {
