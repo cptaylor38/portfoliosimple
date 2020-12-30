@@ -5,6 +5,7 @@ import Landing from './Landing';
 import Portfolio from './Portfolio';
 import FAQ from './FAQ';
 import Contact from './Contact';
+import Helmet from '../Components/Helmet';
 
 export default function Home() {
   const [nav, setNav] = useState(false);
@@ -23,6 +24,7 @@ export default function Home() {
 
   return(
     <div id='main'>
+      <Helmet />
       {nav ? (<Nav scrollHandler={scrollHandler}/>) : null}
       <Landing scrollHandler={scrollHandler}/>
       <Portfolio />
