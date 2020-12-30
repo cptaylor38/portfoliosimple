@@ -10,8 +10,6 @@ const FAQ = () => {
     }
 
     const qaDisplayHandler = () => {
-
-        //is this efficient or should I handle in return with truthies to avoid continuous function calls, need to research
         switch(criteria){
             case 'personal':
                 return <p>Personal</p>

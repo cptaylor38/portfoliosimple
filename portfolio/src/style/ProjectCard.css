@@ -1,15 +1,15 @@
 .pcCont {
-  padding: 5rem;
   display: flex;
-  max-width: 80%;
+  flex: 1;
+  min-width: 30%;
   flex-direction: column;
-  background: white;
-  margin: 3rem 0;
+  background: rgba(255, 255, 255, 0.519);
+  margin: 3rem;
   border-radius: 20px;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  /* box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   -moz-box-shadow: inset 0 0 10px #000000;
   -webkit-box-shadow: inset 0 0 10px #000000;
-  box-shadow: inset 0 0 2px #000000;
+  box-shadow: inset 0 0 2px #000000; */
 }
 
 .headerRow {
@@ -21,26 +21,18 @@
 }
 
 .picAndLinks {
-  max-width: 50%;
-}
-
-.headerAndDescription {
-  width: 60%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-.pcBody {
-  font-size: 1.2em;
 }
 
 .linksRow {
   display: flex;
-  padding: 2rem;
+  width: 80%;
+  padding: 1rem;
   justify-content: space-evenly;
-  padding-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .linksRow > a {
@@ -52,9 +44,8 @@
 }
 
 .pcImg {
-  max-width: 100%;
+  max-width: 80%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  align-self: flex-start;
 }
 
 .pcBody {

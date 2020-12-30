@@ -46,6 +46,10 @@
   font-size: 2rem;
 }
 
+#landingNav > button:hover {
+  cursor: pointer;
+}
+
 #landingLinks {
   font-size: 1.5rem;
 }
@@ -66,4 +70,5 @@
 
 #bioToggleBtn > p:hover {
   color: black;
+  cursor: pointer;
 }

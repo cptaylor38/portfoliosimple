@@ -31,6 +31,7 @@ html {
     rgba(184, 233, 255, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffb59c",endColorstr="#b8e9ff",GradientType=1);
+  background-repeat: no-repeat;
 }
 
 body {

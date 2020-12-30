@@ -1,5 +1,5 @@
 #faq {
-  min-height: 150vh;
+  min-height: 100vh;
   padding-top: 10vh;
   position: relative;
   color: teal;
@@ -23,4 +23,5 @@
 
 #faqHeader > button:hover {
   color: black;
+  cursor: pointer;
 }
