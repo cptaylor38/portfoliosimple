@@ -26,15 +26,18 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-#bioExtendedContainer > header > button {
+#bioCloseBtn {
   background: none;
   outline: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  padding: 0 2rem;
+  color: black;
 }
 
-#bioExtendedContainer > header > button:hover {
-  color: red !important;
+#bioCloseBtn:hover {
+  color: rgb(170, 163, 163);
+  cursor: pointer;
 }
 
 #bioSection {
