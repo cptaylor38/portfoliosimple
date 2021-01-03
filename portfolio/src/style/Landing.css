@@ -43,7 +43,6 @@
   flex-direction: column;
   text-align: center;
   padding: 4rem;
-  font-size: 2rem;
 }
 
 #landingNav > button:hover {
@@ -71,4 +70,25 @@
 #bioToggleBtn > p:hover {
   color: black;
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  #landingContainer {
+    padding-top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #landingBio > header > h1 {
+    font-size: 2rem;
+  }
+
+  #landingNav {
+    padding: 0;
+  }
+
+  #landingNav > .navBtn {
+    font-size: 1.5rem;
+  }
 }

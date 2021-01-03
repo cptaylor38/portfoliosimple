@@ -49,3 +49,10 @@
   color: black;
   cursor: pointer;
 }
+
+@media (max-width: 800) {
+  .navBtn {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+}
