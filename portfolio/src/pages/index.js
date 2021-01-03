@@ -3,7 +3,6 @@ import '../style/index.css';
 import Nav from '../Components/Nav';
 import Landing from './Landing';
 import Portfolio from './Portfolio';
-import FAQ from './FAQ';
 import Contact from './Contact';
 import Helmet from '../Components/Helmet';
 
@@ -28,7 +27,6 @@ export default function Home() {
       {nav ? (<Nav scrollHandler={scrollHandler}/>) : null}
       <Landing scrollHandler={scrollHandler}/>
       <Portfolio />
-      <FAQ />
       <Contact />
     </div>
   )

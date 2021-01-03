@@ -17,11 +17,9 @@ const Nav = ({scrollHandler}) => {
 
    return (
         <div id='nav' ref={navElement}>
-            {/* <a href='#portfolio'>Portfolio</a> */}
-            <button className='navBtn navbarNav' onClick={()=> scrollHandler('portfolio')}>Portfolio</button>
-            <button className='navBtn navbarNav' onClick={()=> scrollHandler('faq')}>FAQ</button>
-            <button className='navBtn navbarNav' onClick={()=> scrollHandler('contact')}>Contact</button>
             <button className='navBtn navbarNav' onClick={()=> scrollHandler('bio')}>Bio</button>
+            <button className='navBtn navbarNav' onClick={()=> scrollHandler('portfolio')}>Portfolio</button>
+            <button className='navBtn navbarNav' onClick={()=> scrollHandler('contact')}>Contact</button>
             <div id='navExteranlLinks'>
                 <ExternalLinks />
             </div>

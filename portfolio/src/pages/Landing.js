@@ -17,14 +17,11 @@ const Landing = ({scrollHandler}) => {
                         <h1>Corbin Taylor</h1>
                         <h3>Software Developer | Front End Developer</h3>
                     </header>
-                    <button id='bioToggleBtn' onClick={()=> setShowBio(true)}>
-                        <p>Bio <FaRegEye /></p>
-                    </button>
                 </div>
                 <div>
                     <div id='landingNav'>
+                        <button className='navBtn' onClick={()=> setShowBio(true)}>Bio</button>
                         <button className='navBtn' onClick={()=> scrollHandler('portfolio')}>Portfolio</button>
-                        <button className='navBtn' onClick={()=> scrollHandler('faq')}>FAQ</button>
                         <button className='navBtn' onClick={()=> scrollHandler('contact')}>Contact</button>
                     </div>
                     <div id='landingLinks'>
