@@ -50,7 +50,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 800) {
+@media (max-width: 800px) {
   .navBtn {
     font-size: 1rem;
     margin-top: 0.5rem;

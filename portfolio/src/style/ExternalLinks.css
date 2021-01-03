@@ -3,7 +3,7 @@
   justify-content: space-evenly;
   flex-flow: row wrap;
   align-items: center;
-  margin: 1rem;
+  margin: 0 1rem;
 }
 
 #externalLinks > a {
@@ -13,4 +13,10 @@
 
 #externalLinks > a:hover {
   color: rgb(60, 60, 156);
+}
+
+@media (max-width: 800px) {
+  #externalLinks > a {
+    font-size: 1rem;
+  }
 }

@@ -7,7 +7,7 @@ const ProjectDetail = ({project })=> {
     return(
         <div className='pdContainer'>
             <div className='pdHeaderRow'>
-                <div><h1>{project.title}</h1></div>
+                <div><h1 className='pdTitle'>{project.title}</h1></div>
                 <div className='pdLinkRow'>
                     <a className='pdLink' 
                        target='_blank'

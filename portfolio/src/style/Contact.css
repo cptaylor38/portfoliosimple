@@ -50,3 +50,31 @@
   background: grey;
   color: white;
 }
+
+@media (max-width: 800px) {
+  #contact {
+    padding-top: 10vh;
+    font-size: 1rem;
+  }
+  #contactHeader {
+    min-width: 100%;
+  }
+  #contactHeader > h3 {
+    padding: 1rem;
+  }
+  #contactFormContainer {
+    width: 100%;
+  }
+  .contactInput {
+    margin-top: 1rem;
+    padding: 0.25rem;
+    border-radius: 0;
+  }
+  #contactFormContainer > textarea {
+    font-size: 1rem;
+  }
+  #contactButton {
+    font-size: 1rem;
+    width: auto;
+  }
+}
