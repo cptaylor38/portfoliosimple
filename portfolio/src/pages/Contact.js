@@ -19,6 +19,7 @@ const Contact = ()=> {
                 <label for='message'>Message:</label>
                 <textarea className='contactInput' type="text" name="message" rows={5} placeholder="I'd like to reach out about..." />
                 <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="bot-field" />
                 <button id='contactButton'>Send</button>
             </div>
         </div>
