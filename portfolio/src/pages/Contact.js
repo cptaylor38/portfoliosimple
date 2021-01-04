@@ -11,7 +11,7 @@ const Contact = ()=> {
                 <ExternalLinks />
             </header>
             <div id='contactFormContainer'>
-            <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" action='#contact'></form>
+            <form method="post" data-netlify-honeypot="bot-field" data-netlify="true" name="contact" action='#contact'></form>
                 <label for='email'>Email:</label>
                 <input className='contactInput' type="email" name="email" placeholder='Your email:' />
                 <label for='name'>Name:</label>
