@@ -4,6 +4,9 @@
   justify-content: center;
   align-items: center;
   padding-top: 10vh;
+  flow-flow: row wrap;
+  width: 90%;
+  margin: auto;
 }
 
 #portfolioCardCont {
@@ -20,4 +23,10 @@
 
 #scrollRightBtn {
   right: 0;
+}
+
+@media (max-width: 800px) {
+  #portfolio {
+    width: 100%;
+  }
 }
