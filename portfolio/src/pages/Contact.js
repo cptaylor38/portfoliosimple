@@ -11,15 +11,15 @@ const Contact = ()=> {
                 <ExternalLinks />
             </header>
             <div id='contactFormContainer'>
-            <form method="post" data-netlify-honeypot="bot-field" data-netlify="true" name="contact" action='#contact'></form>
+            <form method="post" data-netlify-honeypot="bot-field" data-netlify="true" name="contact" action='/contact'></form>
                 <label for='email'>Email:</label>
-                <input className='contactInput' type="email" name="email" placeholder='Your email:' />
+                <input className='contactInput' type="email" name="email" placeholder='Jsmith@gmail.com:' />
                 <label for='name'>Name:</label>
-                <input className='contactInput' type="text" name="name" placeholder='Your name:' />
+                <input className='contactInput' type="text" name="name" placeholder='John Smith' />
                 <label for='message'>Message:</label>
-                <textarea className='contactInput' type="text" name="message" rows={5} placeholder='How can I help you?' />
+                <textarea className='contactInput' type="text" name="message" rows={5} placeholder="I'd like to reach out about..." />
                 <input type="hidden" name="form-name" value="contact" />
-                <button id='contactButton'>Send</button>
+                <button id='contactButton' type="submit">Send</button>
             </div>
         </div>
     )
