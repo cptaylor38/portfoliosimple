@@ -20,13 +20,17 @@
 }
 
 .contactInput {
-  margin-top: 2rem;
   text-indent: 2rem;
   padding: 1rem;
   border-radius: 10px;
   font-size: 1rem;
   font-family: "Ubuntu", sans-serif;
   border: 1px solid grey;
+}
+
+#contactFormContainer > label {
+  margin-top: 2rem;
+  font-weight: bold;
 }
 
 #contactFormContainer > textarea {
@@ -65,8 +69,12 @@
   #contactFormContainer {
     width: 100%;
   }
-  .contactInput {
+
+  #contactFormContainer > label {
     margin-top: 1rem;
+  }
+
+  .contactInput {
     padding: 0.25rem;
     border-radius: 0;
   }
