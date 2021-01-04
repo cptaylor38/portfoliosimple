@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import '../style/Landing.css';
 import ExternalLinks from '../Components/ExternalLinks';
-import { FaRegEye } from 'react-icons/fa';
 import Bio from '../Components/Bio';
 
 const Landing = ({scrollHandler}) => {

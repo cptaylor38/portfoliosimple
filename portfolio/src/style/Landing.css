@@ -32,10 +32,7 @@
 #landingBio > header > h1 {
   font-size: 4rem;
   margin-bottom: 0;
-}
-
-#landingBio > header > h2 {
-  font-size: 2.5rem;
+  text-shadow: 1px 1px 3px #000000;
 }
 
 #landingNav {
@@ -47,37 +44,38 @@
 
 #landingNav > button:hover {
   cursor: pointer;
+  color: white;
+}
+
+#landingNav > .navBtn {
+  color: rgb(239, 255, 202);
+  color: black;
+  text-shadow: 2px 2px 7px #000000;
 }
 
 #landingLinks {
   font-size: 1.5rem;
 }
 
-#bioToggleBtn {
-  background: none;
-  outline: none;
-  border: none;
-  font-size: 2.5rem;
-  color: grey;
-}
-
-#bioToggleBtn > p {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-#bioToggleBtn > p:hover {
-  color: black;
-  cursor: pointer;
-}
-
 @media (max-width: 800px) {
   #landingContainer {
     padding-top: 0;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+  }
+
+  #selfie {
+    width: 100%;
+  }
+
+  #landingBio {
+    margin-top: 20%;
+    padding: 0;
+  }
+
+  #landingBio > header {
+    min-width: 100%;
   }
 
   #landingBio > header > h1 {
@@ -86,6 +84,13 @@
 
   #landingNav {
     padding: 0;
+    flex-direction: row;
+    margin-top: 10vh;
+    align-self: flex-end;
+  }
+
+  #landingBio > header > h3 {
+    font-size: 0.75rem;
   }
 
   #landingNav > .navBtn {
