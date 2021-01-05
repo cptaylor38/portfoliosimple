@@ -9,10 +9,6 @@ const Nav = ({scrollHandler}) => {
 
    useEffect(()=> {
        TweenMax.to([navElement.current], 0.3, {opacity: 1})
-
-       return () => {
-           TweenMax.to([navElement.current], 0.3, {opacity: 0})
-       }
    }, [])
 
    return (

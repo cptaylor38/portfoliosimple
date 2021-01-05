@@ -14,7 +14,7 @@ const Bio = ({setShowBio}) => {
             <div id='bioExtendedContainer'>
                 <header>
                     <h2>A little about me...</h2>
-                    <button id='bioCloseBtn' onClick={()=> setShowBio(false)}><AiFillCloseCircle /></button>
+                    <button id='bioCloseBtn' aria-label="Show Bio" onClick={()=> setShowBio(false)}><AiFillCloseCircle /></button>
                 </header>
                 <section id='bioSection'>
                     <p>Hello, my name is Corbin. I'm currently a freelance developer located in Lexingtion, North Carolina.</p>
