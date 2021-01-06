@@ -1,7 +1,8 @@
 .pdContainer {
   flex: 1;
-  min-width: 40%;
+  min-width: 100%;
   display: flex;
+  flex-direction: row;
   padding: 2rem;
 }
 
@@ -25,18 +26,29 @@
 
 .pdImgAndDetails {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  width: 100%;
   flex: 1;
 }
 
 .pdImg {
-  max-width: 100%;
+  max-width: 50%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .pdDetails {
   padding: 2rem;
   text-align: center;
+  max-width: 40%;
+}
+
+@media (max-width: 1240px) {
+  .pdImg {
+    min-width: 100%;
+  }
+  .pdDetails {
+    min-width: 100%;
+  }
 }
 
 @media (max-width: 1040px) {
@@ -63,6 +75,7 @@
   .pdDetails {
     max-width: 100%;
     padding: 0;
+    font-size: 0.9rem;
   }
   .pdTitle {
     font-size: 1.8rem;
