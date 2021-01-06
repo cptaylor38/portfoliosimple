@@ -17,14 +17,6 @@
   position: relative;
 }
 
-#scrollLeftBtn {
-  left: 0;
-}
-
-#scrollRightBtn {
-  right: 0;
-}
-
 @media (max-width: 800px) {
   #portfolio {
     width: 100%;

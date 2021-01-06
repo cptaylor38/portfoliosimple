@@ -2,6 +2,7 @@ import React from 'react';
 import '../style/Portfolio.css';
 import projectData from '../assets/PortfolioData.json';
 import ProjectDetail from '../Components/ProjectDetail';
+import Fade from 'react-reveal/Fade';
 
 const Portfolio = () => {
     
@@ -10,7 +11,9 @@ const Portfolio = () => {
             <div id='portfolioCardCont'>
                 {projectData.map(item => {
                     return(
-                        <ProjectDetail project={item} key={item.id} />
+                        <Fade left>
+                            <ProjectDetail project={item} key={item.id} />
+                        </Fade>
                     )
                 })}
             </div>
