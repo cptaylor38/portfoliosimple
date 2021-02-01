@@ -11,7 +11,7 @@ const Portfolio = () => {
             <div id='portfolioCardCont'>
                 {projectData.map(item => {
                     return(
-                        <Fade left>
+                        <Fade left key={`${item.id + item.title}`}>
                             <ProjectDetail project={item} key={item.id} />
                         </Fade>
                     )
