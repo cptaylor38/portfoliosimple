@@ -27,7 +27,7 @@ const Contact = ()=> {
                 <h3>Interested in chatting? Contact me via the form, download my resume with the button below, shoot me an email, or reach me on LinkedIn or Github.</h3>
                 <ExternalLinks />
             </header>
-            <form name="contact" id='contactForm' method="post" data-netlify="true" data-netlify-honeypot="bot-field" data-netlify-recaptcha="true" action="">
+            <form name="contact" id='contactForm' method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="">
                 <label htmlFor='email'>Email:</label>
                 <input onChange={changeHandler} className='contactInput' type="email" name="email" placeholder='Jsmith@gmail.com:' value={formData.email}/>
                 <label htmlFor='name'>Name:</label>
