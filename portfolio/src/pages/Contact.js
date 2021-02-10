@@ -20,6 +20,7 @@ const Contact = ()=> {
         console.log(email);
         let len = email.length;
         let domainCheck = email[len - 1] + email[len - 2] + email[len - 3] + email[len - 4];
+        console.log(domainCheck);
         if(domainCheck !== '.com' || domainCheck !== '.net' || domainCheck !== '.edu' || domainCheck !== '.gov' || domainCheck !== '.org') return false;
     }
 
@@ -50,10 +51,14 @@ const Contact = ()=> {
 
         //need to fix these validators - test email logic. probably a better way to approach this.
         const {name, email, message} = formData;
-        if(name !== '' && email !== '' && message !== '') setDisabled(true);
-        else {
-            if(domainChecker(email.trim()) && !messageChecker(message.trim())) setDisabled(false);
-        }
+        //leaving this temporarily to stay functional
+        if(name !== '' && email !== '' && message !== '') setDisabled(false);
+        // if(name !== '' && email !== '' && message !== ''){
+        //     if(domainChecker(email.trim()) && messageChecker(message.trim())) setDisabled(false);
+        // }
+        // else {
+        //     // if(domainChecker(email.trim()) && !messageChecker(message.trim())) setDisabled(false);
+        // }
     }, [formData])
     
     return (
