@@ -12,8 +12,7 @@ const Contact = ()=> {
     });
 
     const nameValidator = (value) => {
-        console.log(parseInt(value), value[value.length - 1]);
-        if(isNaN(parseInt(value))) return true;
+        if(isNaN(parseInt(value[value.length - 1]))) return true;
         return false;
     }
 
