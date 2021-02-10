@@ -11,14 +11,45 @@ const Contact = ()=> {
         message: ''
     });
 
+    const nameValidator = (value) => {
+        console.log(parseInt(value), value[value.length - 1]);
+        if(isNaN(parseInt(value))) return true;
+        return false;
+    }
+
+    const domainChecker = (email) => {
+        let len = email.length;
+        let domainCheck = email[len - 1] + email[len - 2] + email[len - 3] + email[len - 4];
+        if(domainCheck !== '.com' || domainCheck !== '.net' || domainCheck !== '.edu' || domainCheck !== '.gov' || domainCheck !== '.org') return false;
+    }
+
+    const messageChecker = (message) => {
+        if(message.length < 2) return false;
+        else {
+            if(message !== isNaN) return true;
+        } 
+    }
+
     const changeHandler = (e)=> {
-        setFormData({...formData, [e.target.name] : e.target.value});
+        switch(e.target.name){
+            case 'name':
+                if(nameValidator(e.target.value)) setFormData({...formData, name: e.target.value});
+                break;
+            case 'email':
+                setFormData({...formData, email: e.target.value});
+                break;
+            case 'message':
+                setFormData({...formData, message: e.target.value});
+                break;
+            default:
+                return;
+        }
     }
 
     useEffect(()=> {
         const {name, email, message} = formData;
         if(name !== '' && email !== '' && message !== '') setDisabled(false);
-        else setDisabled(true);
+        else if (domainChecker(email.trim()) && !messageChecker(message.trim())) setDisabled(true);
     }, [formData])
     
     return (
@@ -29,7 +60,7 @@ const Contact = ()=> {
             </header>
             <form name="contact" id='contactForm' method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="">
                 <label htmlFor='email'>Email:</label>
-                <input onChange={changeHandler} className='contactInput' type="email" name="email" placeholder='Jsmith@gmail.com:' value={formData.email}/>
+                <input onChange={changeHandler} className='contactInput' type="email" name="email" placeholder='Jsmith@gmail.com' value={formData.email}/>
                 <label htmlFor='name'>Name:</label>
                 <input onChange={changeHandler} className='contactInput' type="text" name="name" placeholder='John Smith' value={formData.name}/>
                 <label htmlFor='message'>Message:</label>
