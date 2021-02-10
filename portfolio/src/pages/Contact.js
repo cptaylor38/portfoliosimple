@@ -17,6 +17,7 @@ const Contact = ()=> {
     }
 
     const domainChecker = (email) => {
+        console.log(email);
         let len = email.length;
         let domainCheck = email[len - 1] + email[len - 2] + email[len - 3] + email[len - 4];
         if(domainCheck !== '.com' || domainCheck !== '.net' || domainCheck !== '.edu' || domainCheck !== '.gov' || domainCheck !== '.org') return false;
@@ -46,9 +47,13 @@ const Contact = ()=> {
     }
 
     useEffect(()=> {
+
+        //need to fix these validators - test email logic. probably a better way to approach this.
         const {name, email, message} = formData;
-        if(name !== '' && email !== '' && message !== '') setDisabled(false);
-        else if (domainChecker(email.trim()) && !messageChecker(message.trim())) setDisabled(true);
+        if(name !== '' && email !== '' && message !== '') setDisabled(true);
+        else {
+            if(domainChecker(email.trim()) && !messageChecker(message.trim())) setDisabled(false);
+        }
     }, [formData])
     
     return (
