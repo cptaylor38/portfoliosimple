@@ -53,10 +53,7 @@ const Contact = ()=> {
     }
 
     useEffect(()=> {
-
-        //need to fix these validators - test email logic. probably a better way to approach this.
         const {name, email, message} = formData;
-        //leaving this temporarily to stay functional
         if(name !== '' && email !== '' && message !== ''){
             if(domainChecker(email) && messageChecker(message.trim())) setDisabled(false);
         }
