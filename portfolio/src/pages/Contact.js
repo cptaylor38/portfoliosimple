@@ -17,17 +17,22 @@ const Contact = ()=> {
     }
 
     const domainChecker = (email) => {
-        console.log(email);
-        let len = email.length;
-        let domainCheck = email[len - 1] + email[len - 2] + email[len - 3] + email[len - 4];
-        console.log(domainCheck);
-        if(domainCheck !== '.com' || domainCheck !== '.net' || domainCheck !== '.edu' || domainCheck !== '.gov' || domainCheck !== '.org') return false;
+        let domainCheck = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        if(domainCheck.test(email)) return true;
+        else {
+            setDisabled(true);
+            return false;
+        }
     }
 
     const messageChecker = (message) => {
         if(message.length < 2) return false;
         else {
             if(message !== isNaN) return true;
+            else{
+                setDisabled(true);
+                return false;
+            }
         } 
     }
 
@@ -52,13 +57,9 @@ const Contact = ()=> {
         //need to fix these validators - test email logic. probably a better way to approach this.
         const {name, email, message} = formData;
         //leaving this temporarily to stay functional
-        if(name !== '' && email !== '' && message !== '') setDisabled(false);
-        // if(name !== '' && email !== '' && message !== ''){
-        //     if(domainChecker(email.trim()) && messageChecker(message.trim())) setDisabled(false);
-        // }
-        // else {
-        //     // if(domainChecker(email.trim()) && !messageChecker(message.trim())) setDisabled(false);
-        // }
+        if(name !== '' && email !== '' && message !== ''){
+            if(domainChecker(email) && messageChecker(message.trim())) setDisabled(false);
+        }
     }, [formData])
     
     return (
