@@ -22,7 +22,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding-left: 2rem;
-  background: rgb(239, 255, 202);
+  background: rgb(245, 243, 243);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -44,7 +44,7 @@
   max-width: 60%;
   margin: auto;
   font-size: 1.1em;
-  background: rgb(239, 255, 202);
+  background: rgb(245, 243, 243);
   border-radius: 0 0 50px 50px;
   display: flex;
   flex-flow: row wrap;
