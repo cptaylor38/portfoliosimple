@@ -10,10 +10,10 @@ const ProjectDetail = ({project })=> {
                 <img className='pdImg' alt={project.title} src={require(`../assets/images/projectImages/${project.image}`)} />
                 <div className='pdDetails'>
                     <h2>{project.title}</h2>
-                    <a className='pdLink' 
+                    {project.deployedLink !== '' ? (<a className='pdLink' 
                        target='_blank'
                        rel='noopener noreferrer' 
-                       href={project.deployedLink}><IoNavigateOutline /> Visit Site</a>
+                       href={project.deployedLink}><IoNavigateOutline /> Visit Site</a>) : null}
                     <a className='pdLink' 
                        target='_blank'
                        rel='noopener noreferrer' 
